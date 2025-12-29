@@ -18,17 +18,17 @@ interface Service {
 export const services: Service[] = [
   {
     id: 'parking',
-    title: "Nettoyage Parking",
+    title: "Прибирання паркінгів",
     description: "Обслуговування та миття підлог у закритих і відкритих паркінгах, знежирення та видалення масляних плям.",
     icon: Building2,
     features: [
       "Lavage des sols intérieurs",
-      "Nettoyage des parkings extérieurs",
+      "Прибирання відкритих паркінгів",
       "Dégraissage professionnel",
       "Suppression des traces d'huile"
     ],
-    cta: "En savoir plus sur le nettoyage de parking",
-    longDescription: "Notre service de nettoyage de parking offre une solution complète pour maintenir vos espaces de stationnement impeccables. Nous utilisons des équipements professionnels et des produits écologiques pour garantir un résultat optimal tout en préservant l'environnement.",
+    cta: "Дізнатися більше про прибирання паркінгу",
+    longDescription: "Наш сервіс прибирання паркінгів пропонує комплексне рішення для підтримки паркувальних зон у бездоганному стані. Ми використовуємо професійне обладнання та екологічні засоби для досягнення оптимального результату, зберігаючи навколишнє середовище.",
     benefits: [
       "Amélioration de l'image de votre établissement",
       "Réduction des risques d'accidents",
@@ -40,7 +40,7 @@ export const services: Service[] = [
       "Déblayage et préparation de la zone",
       "Application de produits dégraissants",
       "Lavage haute pression",
-      "Nettoyage des murs et piliers",
+      "Чистка стін та колон",
       "Inspection finale"
     ],
     equipment: [
@@ -54,7 +54,7 @@ export const services: Service[] = [
   },
   {
     id: 'bureaux',
-    title: "Nettoyage Bureaux",
+    title: "Прибирання офісів",
     description: "Entretien des espaces de travail : postes, sols, sanitaires, salles de réunion, etc.",
     icon: Briefcase,
     features: [
@@ -89,7 +89,7 @@ export const services: Service[] = [
   },
   {
     id: 'cliniques',
-    title: "Nettoyage Cliniques",
+    title: "Прибирання клінік",
     description: "Nettoyage et désinfection selon les normes sanitaires strictes en environnement médicalisé.",
     icon: Stethoscope,
     features: [
@@ -124,7 +124,7 @@ export const services: Service[] = [
   },
   {
     id: 'vitrerie',
-    title: "Nettoyage Vitrerie",
+    title: "Миття вітрин",
     description: "Lavage de vitres intérieures/extérieures, en hauteur ou non, avec ou sans accès spécifique.",
     icon: Wind,
     features: [
