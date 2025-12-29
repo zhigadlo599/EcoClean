@@ -22,10 +22,10 @@ export const services: Service[] = [
     description: "Обслуговування та миття підлог у закритих і відкритих паркінгах, знежирення та видалення масляних плям.",
     icon: Building2,
     features: [
-      "Lavage des sols intérieurs",
+      "Миття внутрішніх підлог",
       "Прибирання відкритих паркінгів",
-      "Dégraissage professionnel",
-      "Suppression des traces d'huile"
+      "Професійне знежирення",
+      "Видалення масляних плям"
     ],
     cta: "Дізнатися більше про прибирання паркінгу",
     longDescription: "Наш сервіс прибирання паркінгів пропонує комплексне рішення для підтримки паркувальних зон у бездоганному стані. Ми використовуємо професійне обладнання та екологічні засоби для досягнення оптимального результату, зберігаючи навколишнє середовище.",
@@ -55,15 +55,15 @@ export const services: Service[] = [
   {
     id: 'bureaux',
     title: "Прибирання офісів",
-    description: "Entretien des espaces de travail : postes, sols, sanitaires, salles de réunion, etc.",
+    description: "Догляд за робочими просторами: робочі місця, підлоги, санвузли, конференц-зали тощо.",
     icon: Briefcase,
     features: [
-      "Nettoyage des postes de travail",
-      "Entretien des sanitaires",
-      "Nettoyage des salles de réunion",
-      "Entretien des sols"
+      "Прибирання робочих місць",
+      "Прибирання санвузлів",
+      "Прибирання конференц-залів",
+      "Догляд за підлогами"
     ],
-    cta: "Découvrir nos services de nettoyage de bureaux",
+    cta: "Дізнатися про наші послуги з прибирання офісів",
     longDescription: "Notre service de nettoyage de bureaux est conçu pour maintenir un environnement de travail sain et agréable. Nous adaptons nos interventions à vos horaires et à vos besoins spécifiques.",
     benefits: [
       "Environnement de travail sain",
@@ -72,11 +72,11 @@ export const services: Service[] = [
       "Flexibilité des horaires"
     ],
     process: [
-      "Désinfection des surfaces de contact",
-      "Nettoyage des postes de travail",
-      "Entretien des espaces communs",
-      "Nettoyage des sanitaires",
-      "Entretien des sols"
+      "Дезінфекція контактних поверхонь",
+      "Прибирання робочих місць",
+      "Догляд за загальними зонами",
+      "Прибирання санвузлів",
+      "Догляд за підлогами"
     ],
     equipment: [
       "Produits désinfectants écologiques",
@@ -199,12 +199,12 @@ export const services: Service[] = [
     description: "Nettoyage en fin de travaux : poussières, gravats, vitrages, sols, etc.",
     icon: HardHat,
     features: [
-      "Élimination des poussières",
-      "Nettoyage des gravats",
-      "Lavage des vitrages",
-      "Entretien des sols"
+      "Видалення пилу",
+      "Прибирання будівельних відходів",
+      "Миття вікон та скління",
+      "Догляд за підлогами"
     ],
-    cta: "Découvrir nos services de nettoyage de chantier",
+    cta: "Дізнатися про наші послуги з прибирання після будівництва",
     longDescription: "Notre service de nettoyage de fin de chantier assure une remise en état impeccable de vos locaux après des travaux. Nous intervenons avec des équipements adaptés pour éliminer tous types de résidus de construction.",
     benefits: [
       "Livraison clé en main",
