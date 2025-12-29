@@ -266,7 +266,7 @@ export const services: Service[] = [
   {
     id: 'decontamination',
     title: "Décontamination",
-    description: "Élimination des substances dangereuses (chimiques, biologiques…) dans les environnements sensibles.",
+    description: "Видалення небезпечних речовин (хімічних, біологічних тощо) у чутливих приміщеннях.",
     icon: Shield,
     features: [
       "Traitement des substances dangereuses",
