@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useLayoutEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -33,6 +33,8 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
+  const slideRef = useRef<HTMLDivElement | null>(null);
+  const [slideHeight, setSlideHeight] = useState<number>(0);
   const sceneRef = useRef<THREE.Scene | null>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
@@ -236,6 +238,20 @@ const Testimonials = () => {
     };
   }, []);
 
+  // Measure slide height so container keeps stable height during animations
+  useLayoutEffect(() => {
+    const measure = () => {
+      if (slideRef.current) {
+        const h = slideRef.current.getBoundingClientRect().height;
+        setSlideHeight(h);
+      }
+    };
+
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  }, [currentIndex]);
+
   useEffect(() => {
     let timer: NodeJS.Timeout;
     if (isAutoPlaying) {
@@ -320,9 +336,11 @@ const Testimonials = () => {
           className="relative max-w-2xl mx-auto"
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
+          style={{ minHeight: slideHeight || undefined }}
         >
           <AnimatePresence initial={false} custom={currentIndex}>
             <motion.div
+              ref={slideRef}
               key={currentIndex}
               custom={currentIndex}
               variants={slideVariants}
@@ -335,7 +353,7 @@ const Testimonials = () => {
                 scale: { duration: 0.2 },
                 filter: { duration: 0.2 }
               }}
-              className="w-full"
+              className="absolute top-0 left-0 w-full"
             >
               <Card className="bg-white/90 backdrop-blur-xl border-eco-green-100/50 shadow-xl">
                 <CardContent className="p-4 sm:p-6 md:p-8">
