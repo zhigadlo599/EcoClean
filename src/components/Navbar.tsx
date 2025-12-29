@@ -226,8 +226,8 @@ const Navbar = () => {
                 className="flex items-center rounded-full px-3 sm:px-4 py-1.5 sm:py-2 transition-all duration-300 text-eco-green-600 hover:bg-eco-green-50/80 text-sm hover:shadow-sm"
               >
                 <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2" />
-                <span className="hidden xl:inline">+33 (0) 7 44 53 10 08</span>
-                <span className="xl:hidden">07 44 53 10 08</span>
+                <span className="hidden xl:inline">+380 (50) 123 45 67</span>
+                <span className="xl:hidden">050 123 45 67</span>
               </Button>
             </motion.div>
           </div>
@@ -336,7 +336,11 @@ const Navbar = () => {
                 className="flex items-center py-2 border-t border-gray-100"
               >
                 <Phone className="h-3 w-3 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 text-eco-green-500" />
-                <span className="text-xs sm:text-sm text-gray-600">+33 (0) 7 44 53 10 08</span>
+                <span className="text-xs sm:text-sm text-gray-600">+380 (50) 123 45 67</span>
+                            <div className="flex flex-col gap-1 mt-2 text-xs sm:text-sm text-gray-600">
+                              <div><span className="font-semibold">Адреса:</span> м. Київ, вул. Вишгородська 69</div>
+                              <div><span className="font-semibold">Email:</span> eco.clean.promax@gmail.com</div>
+                            </div>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
