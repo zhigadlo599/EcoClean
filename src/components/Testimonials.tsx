@@ -335,7 +335,7 @@ const Testimonials = () => {
                 scale: { duration: 0.2 },
                 filter: { duration: 0.2 }
               }}
-              className="absolute w-full"
+              className="w-full"
             >
               <Card className="bg-white/90 backdrop-blur-xl border-eco-green-100/50 shadow-xl">
                 <CardContent className="p-4 sm:p-6 md:p-8">
