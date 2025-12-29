@@ -2,42 +2,42 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Article from './Article';
 
-// Données des articles (à remplacer par des données dynamiques plus tard)
+// Дані статей (замінити на динамічні дані пізніше)
 const articles = [
   {
-    title: "Les avantages du nettoyage écologique",
-    description: "Découvrez pourquoi le nettoyage écologique est non seulement meilleur pour l'environnement, mais aussi plus efficace pour votre santé et votre bien-être.",
+    title: "Переваги екологічного прибирання",
+    description: "Дізнайтеся, чому екологічне прибирання не лише краще для довкілля, а й корисніше для вашого здоров'я та самопочуття.",
     image: "/images/articles/eco-cleaning.jpg",
-    date: "15 Mars 2024",
-    readTime: "5 min",
-    category: "Écologie",
+    date: "15 Березня 2024",
+    readTime: "5 хв",
+    category: "Екологія",
     slug: "avantages-nettoyage-ecologique"
   },
   {
-    title: "Techniques de nettoyage professionnel",
-    description: "Les méthodes et techniques utilisées par nos professionnels pour garantir un nettoyage impeccable de vos espaces.",
+    title: "Техніки професійного прибирання",
+    description: "Методи та техніки, які використовують наші професіонали для бездоганного прибирання ваших приміщень.",
     image: "/images/articles/pro-cleaning.jpg",
-    date: "12 Mars 2024",
-    readTime: "4 min",
-    category: "Techniques",
+    date: "12 Березня 2024",
+    readTime: "4 хв",
+    category: "Техніки",
     slug: "techniques-nettoyage-professionnel"
   },
   {
-    title: "Entretien des espaces verts",
-    description: "Comment maintenir vos espaces verts en parfait état tout en respectant l'environnement et la biodiversité.",
+    title: "Догляд за зеленими зонами",
+    description: "Як підтримувати зелені зони в ідеальному стані, дотримуючись екологічних норм та зберігаючи біорізноманіття.",
     image: "/images/articles/green-spaces.jpg",
-    date: "10 Mars 2024",
-    readTime: "6 min",
-    category: "Espaces Verts",
+    date: "10 Березня 2024",
+    readTime: "6 хв",
+    category: "Зелені зони",
     slug: "entretien-espaces-verts"
   },
   {
-    title: "Solutions de nettoyage innovantes",
-    description: "Les dernières innovations en matière de produits et techniques de nettoyage respectueux de l'environnement.",
+    title: "Інноваційні рішення для прибирання",
+    description: "Останні інновації у продуктах та техніках прибирання, що дбайливо ставляться до довкілля.",
     image: "/images/articles/innovations.jpg",
-    date: "8 Mars 2024",
-    readTime: "5 min",
-    category: "Innovation",
+    date: "8 Березня 2024",
+    readTime: "5 хв",
+    category: "Інновації",
     slug: "solutions-nettoyage-innovantes"
   }
 ];
