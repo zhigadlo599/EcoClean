@@ -27,64 +27,28 @@ export const services: Service[] = [
       "Професійне знежирення",
       "Видалення масляних плям"
     ],
-    cta: "Дізнатися більше про прибирання паркінгу",
-    longDescription: "Наш сервіс прибирання паркінгів пропонує комплексне рішення для підтримки паркувальних зон у бездоганному стані. Ми використовуємо професійне обладнання та екологічні засоби для досягнення оптимального результату, зберігаючи навколишнє середовище.",
+    cta: "Дізнатися більше про прибирання паркінгів",
+    longDescription: "Наш сервіс прибирання паркінгів пропонує комплексне рішення для підтримки паркувальних зон у бездоганному стані. Ми використовуємо професійне обладнання та екологічні засоби для досягнення оптимального результату.",
     benefits: [
-      "Покращення іміджу вашого закладу",
-      "Зниження ризику нещасних випадків",
-      "Подовження строку експлуатації покриттів",
-      "Відповідність санітарним нормам"
+      "Підвищена безпека",
+      "Відновлення зовнішнього вигляду",
+      "Запобігання структурним пошкодженням",
+      "Економічне обслуговування"
     ],
-    {
-      id: 'parking-cleaning',
-      title: 'Прибирання паркінгів',
-      description: "Прибирання паркінгів і гаражів: видалення плям, миття під високим тиском та регулярне обслуговування.",
-      features: [
-        'Миття внутрішніх підлог',
-        'Знежирення плям від олії',
-        'Прибирання стін і стель',
-        'Антибактеріальна обробка при потребі'
-      ],
-      cta: 'Дізнатися більше про прибирання паркінгів',
-      longDescription: "Ми пропонуємо повне прибирання паркінгів, у тому числі миття під високим тиском, знежирення слідів олії та спеціальні обробки залежно від типу поверхні.",
-      benefits: [
-        'Підвищена безпека',
-        'Відновлення зовнішнього вигляду',
-        'Запобігання структурним пошкодженням',
-        'Економічне обслуговування'
-      ],
-      {
-        id: 'decontamination',
-        title: 'Деконтамінація',
-        description: "Деконтамінація та видалення небезпечних матеріалів: спеціалізовані втручання для небезпечних речовин.",
-        features: [
-          'Оцінка ризиків',
-          'Видалення небезпечних матеріалів',
-          'Відповідність нормам',
-          'Управління відходами'
-        ],
-        cta: "Зв'яжіться з нами для деконтамінації",
-        longDescription: "Ми здійснюємо деконтамінацію забруднених місць, включно з видаленням небезпечних матеріалів і відновленням приміщень відповідно до чинних норм.",
-        benefits: [
-          'Гарантована безпека',
-          'Відповідність регуляціям',
-          "Зниження ризику для здоров'я",
-          'Швидке та безпечне втручання'
-        ],
-        process: [
-          'Початковий діагноз',
-          'Розробка плану втручання',
-          'Контрольоване видалення контамінантів',
-          'Очищення та відновлення',
-          'Утилізація небезпечних відходів'
-        ],
-        equipment: [
-          'Спеціалізовані засоби індивідуального захисту',
-          'Інструменти для видалення',
-          'Системи ізоляції',
-          'Транспорт для вивезення відходів'
-        ]
-      },
+    process: [
+      "Огляд майданчика",
+      "Попередня обробка плям",
+      "Миття під високим тиском",
+      "Цільові обробки",
+      "Контроль якості"
+    ],
+    equipment: [
+      "Мийка високого тиску",
+      "Знежирювальні засоби",
+      "Промислові щітки",
+      "Пилососні системи"
+    ],
+    color: "from-eco-green-500 to-eco-green-600",
     bannerImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1920&q=80"
   },
   {
@@ -99,7 +63,7 @@ export const services: Service[] = [
       "Спеціалізовані протоколи"
     ],
     cta: "Дізнатися про наш підхід до медичного прибирання",
-    longDescription: "Наш сервіс прибирання для клінік відповідає суворим вимогам медичного середовища. Ми дотримуємося строгих протоколів для забезпечення стерильного та безпечного середовища.",
+    longDescription: "Наш сервіс для клінік відповідає суворим вимогам медичного середовища. Ми дотримуємося строгих протоколів для забезпечення стерильного і безпечного простору.",
     benefits: [
       "Відповідність санітарним нормам",
       "Зниження ризику інфекцій",
@@ -124,35 +88,35 @@ export const services: Service[] = [
   },
   {
     id: 'vitrerie',
-    title: "Миття вітрин",
-    description: "Lavage de vitres intérieures/extérieures, en hauteur ou non, avec ou sans accès spécifique.",
+    title: "Миття вітрин і вікон",
+    description: "Миття внутрішніх і зовнішніх вікон, включно з роботою на висоті та спеціальними доступами.",
     icon: Wind,
     features: [
-      "Vitres intérieures et extérieures",
-      "Nettoyage en hauteur",
-      "Équipements spécialisés",
-      "Techniques professionnelles"
+      "Миття внутрішніх і зовнішніх вікон",
+      "Робота на висоті",
+      "Спеціалізоване обладнання",
+      "Професійні техніки"
     ],
-    cta: "Explorez nos services de vitrerie",
-    longDescription: "Notre service de nettoyage de vitrerie assure une transparence parfaite de vos vitres, quelle que soit leur hauteur ou leur accessibilité. Nous utilisons des techniques et équipements adaptés à chaque situation.",
+    cta: "Дізнатися про миття вітрин",
+    longDescription: "Ми забезпечуємо бездоганну прозорість ваших вікон, використовуючи методи та обладнання, адаптовані до кожної ситуації — незалежно від висоти чи доступу.",
     benefits: [
-      "Meilleure luminosité",
-      "Image professionnelle",
-      "Techniques sécurisées",
-      "Résultats impeccables"
+      "Краща освітленість",
+      "Професійний імідж",
+      "Безпечні методи роботи",
+      "Ідеальний результат"
     ],
     process: [
-      "Évaluation des accès",
-      "Préparation de la zone",
-      "Nettoyage des cadres",
-      "Lavage des vitres",
-      "Inspection finale"
+      "Оцінка доступу",
+      "Підготовка зони",
+      "Очищення рам",
+      "Миття стекол",
+      "Фінальна інспекція"
     ],
     equipment: [
-      "Équipements de levage",
-      "Raclettes professionnelles",
-      "Produits spécifiques",
-      "Matériel de sécurité"
+      "Підйомне обладнання",
+      "Професійні раклі",
+      "Спеціалізовані засоби",
+      "Засоби безпеки"
     ],
     color: "from-eco-green-600 to-eco-green-700",
     bannerImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
@@ -160,142 +124,141 @@ export const services: Service[] = [
   {
     id: 'sinistres',
     title: "Прибирання після надзвичайних подій",
-    description: "Remise en état après incendie, inondation ou dégât matériel important.",
+    description: "Відновлення після пожежі, повені або значних матеріальних пошкоджень.",
     icon: Flame,
     features: [
-      "Intervention post-incendie",
-      "Nettoyage après inondation",
-      "Remise en état complète",
-      "Traitement des dégâts"
+      "Роботи після пожежі",
+      "Очищення після повені",
+      "Повне відновлення",
+      "Обробка пошкоджень"
     ],
-    cta: "Дізнатися більше про наші роботи після надзвичайних подій",
-    longDescription: "Notre service de nettoyage post-sinistre intervient rapidement pour remettre en état vos locaux après un sinistre. Nous disposons des équipements et du savoir-faire nécessaires pour traiter tous types de dégâts.",
+    cta: "Дізнатися про відновлення після надзвичайних подій",
+    longDescription: "Наш сервіс реагує оперативно, щоб відновити приміщення після надзвичайної події. Ми маємо обладнання та знання для роботи з різними типами збитків.",
     benefits: [
-      "Intervention rapide",
-      "Expertise technique",
-      "Traitement complet",
-      "Accompagnement administratif"
+      "Швидке реагування",
+      "Технічна експертиза",
+      "Повне відновлення",
+      "Підтримка документації"
     ],
     process: [
-      "Évaluation des dégâts",
-      "Sécurisation des lieux",
-      "Extraction des débris",
-      "Nettoyage approfondi",
-      "Désinfection",
-      "Remise en état"
+      "Оцінка збитків",
+      "Забезпечення безпеки об'єкта",
+      "Вилучення уламків",
+      "Глибоке очищення",
+      "Дезінфекція та відновлення"
     ],
     equipment: [
-      "Équipements de décontamination",
-      "Extracteurs d'eau",
-      "Déshumidificateurs",
-      "Matériel de protection"
+      "Обладнання для деконтамінації",
+      "Витяжні установки",
+      "Осушувачі повітря",
+      "Захисне спорядження"
     ],
     color: "from-eco-green-500 to-eco-green-600",
     bannerImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
   },
   {
     id: 'chantier',
-    title: "Nettoyage de Chantier",
-    description: "Nettoyage en fin de travaux : poussières, gravats, vitrages, sols, etc.",
+    title: "Прибирання після будівництва",
+    description: "Підсумкове прибирання після завершення робіт: пил, будівельні відходи, миття вікон, підлоги тощо.",
     icon: HardHat,
     features: [
       "Видалення пилу",
       "Прибирання будівельних відходів",
-      "Миття вікон та скління",
+      "Миття скління",
       "Догляд за підлогами"
     ],
-    cta: "Дізнатися про наші послуги з прибирання після будівництва",
-    longDescription: "Notre service de nettoyage de fin de chantier assure une remise en état impeccable de vos locaux après des travaux. Nous intervenons avec des équipements adaptés pour éliminer tous types de résidus de construction.",
+    cta: "Дізнатися про прибирання після будівництва",
+    longDescription: "Ми забезпечуємо ідеальну підготовку приміщення після будівельних робіт, прибираючи всі види залишків і готуючи простір до експлуатації.",
     benefits: [
-      "Livraison clé en main",
-      "Élimination complète des résidus",
-      "Respect des délais",
-      "Protection des finitions"
+      "Готовність до здачі об'єкта",
+      "Повне усунення залишків",
+      "Дотримання строків",
+      "Захист оздоблення"
     ],
     process: [
-      "Évaluation des zones",
-      "Élimination des déchets",
-      "Nettoyage des poussières",
-      "Lavage des surfaces",
-      "Inspection finale"
+      "Оцінка зон",
+      "Вивезення відходів",
+      "Очищення пилу",
+      "Миття поверхонь",
+      "Фінальна перевірка"
     ],
     equipment: [
-      "Aspirateurs industriels",
-      "Équipements de protection",
-      "Produits spécifiques",
-      "Matériel de levage"
+      "Промислові пилососи",
+      "Захисне обладнання",
+      "Спеціальні засоби",
+      "Підіймальні механізми"
     ],
     color: "from-eco-green-600 to-eco-green-700",
     bannerImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
   },
   {
     id: 'desinfection',
-    title: "Désinfection et Dératisation",
-    description: "Traitement des locaux contre les bactéries, virus, nuisibles (rats, souris, insectes).",
+    title: "Дезінфекція та дератизація",
+    description: "Обробка приміщень від бактерій, вірусів та шкідників (гризуни, комахи).",
     icon: Bug,
     features: [
-      "Traitement anti-nuisibles",
-      "Désinfection complète",
-      "Solutions écologiques",
-      "Protection durable"
+      "Боротьба зі шкідниками",
+      "Повна дезінфекція",
+      "Екологічні рішення",
+      "Довготривала захист"
     ],
-    cta: "Notre approche de la désinfection",
-    longDescription: "Notre service de désinfection et dératisation utilise des méthodes respectueuses de l'environnement pour éliminer les nuisibles et assainir vos locaux. Nous proposons des solutions durables et efficaces.",
+    cta: "Дізнатися про дезінфекцію",
+    longDescription: "Ми використовуємо методи, що поважають довкілля, для усунення шкідників і санітарної обробки приміщень, пропонуючи ефективні та стійкі рішення.",
     benefits: [
-      "Solutions écologiques",
-      "Protection durable",
-      "Expertise technique",
-      "Suivi personnalisé"
+      "Екологічні рішення",
+      "Довготривала захист",
+      "Технічна експертиза",
+      "Індивідуальний супровід"
     ],
     process: [
-      "Diagnostic initial",
-      "Identification des nuisibles",
-      "Application des traitements",
-      "Mise en place de prévention",
-      "Suivi régulier"
+      "Початковий діагноз",
+      "Ідентифікація шкідників",
+      "Застосування засобів",
+      "Впровадження профілактики",
+      "Регулярний контроль"
     ],
     equipment: [
-      "Produits certifiés",
-      "Équipements de pulvérisation",
-      "Pièges professionnels",
-      "Matériel de détection"
+      "Сертифіковані засоби",
+      "Обладнання для розпилення",
+      "Професійні пастки",
+      "Діагностичне обладнання"
     ],
     color: "from-eco-green-500 to-eco-green-600",
     bannerImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
   },
   {
     id: 'decontamination',
-    title: "Décontamination",
+    title: "Деконтамінація",
     description: "Видалення небезпечних речовин (хімічних, біологічних тощо) у чутливих приміщеннях.",
     icon: Shield,
     features: [
-      "Traitement des substances dangereuses",
-      "Protocoles de sécurité",
-      "Équipements spécialisés",
-      "Personnel qualifié"
+      "Обробка небезпечних речовин",
+      "Протоколи безпеки",
+      "Спеціалізоване обладнання",
+      "Кваліфікований персонал"
     ],
-    cta: "Дізнатися більше про наші послуги з деконтамінації",
-    longDescription: "Notre service de décontamination intervient dans les environnements sensibles pour éliminer les substances dangereuses. Nous suivons des protocoles stricts pour garantir la sécurité de tous.",
+    cta: "Дізнатися більше про деконтамінацію",
+    longDescription: "Наш сервіс деконтамінації працює в чутливих середовищах для усунення небезпечних речовин. Ми дотримуємося строгих протоколів, щоб гарантувати безпеку всіх учасників.",
     benefits: [
-      "Expertise technique",
-      "Sécurité maximale",
-      "Conformité réglementaire",
-      "Intervention rapide"
+      "Технічна експертиза",
+      "Максимальна безпека",
+      "Відповідність нормам",
+      "Швидке втручання"
     ],
     process: [
-      "Analyse des risques",
-      "Mise en place du périmètre",
-      "Application des protocoles",
-      "Traitement des zones",
-      "Vérification finale"
+      "Аналіз ризиків",
+      "Обмеження периметру",
+      "Застосування протоколів",
+      "Обробка зон",
+      "Фінальна перевірка"
     ],
     equipment: [
-      "Équipements de protection",
-      "Matériel de détection",
-      "Produits neutralisants",
-      "Système de confinement"
+      "Засоби індивідуального захисту",
+      "Діагностичне обладнання",
+      "Нейтралізуючі засоби",
+      "Системи ізоляції"
     ],
     color: "from-eco-green-600 to-eco-green-700",
     bannerImage: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
   }
-]; 
+];
