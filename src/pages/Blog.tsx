@@ -127,7 +127,7 @@ const Blog = () => {
     if (!mounted) return [];
     
     return blogPosts.filter(post => {
-      const matchesCategory = selectedCategory === "Toutes les catégories" || post.category === selectedCategory;
+      const matchesCategory = selectedCategory === "Всі категорії" || post.category === selectedCategory;
       const searchLower = searchQuery.toLowerCase();
       const matchesSearch = searchQuery === "" || 
         post.title.toLowerCase().includes(searchLower) ||
@@ -162,11 +162,11 @@ const Blog = () => {
   const handleResetFilters = () => {
     if (isChrome) {
       requestAnimationFrame(() => {
-        setSelectedCategory("Toutes les catégories");
+        setSelectedCategory("Всі категорії");
         setSearchQuery("");
       });
     } else {
-      setSelectedCategory("Toutes les catégories");
+      setSelectedCategory("Всі категорії");
       setSearchQuery("");
     }
   };
