@@ -408,6 +408,19 @@ const Testimonials = () => {
               <ChevronRight className="h-5 w-5 sm:h-6 sm:w-6 text-eco-green-600" />
             </Button>
           </div>
+          {/* Dots navigation */}
+          <div className="mt-6 flex justify-center gap-2" role="tablist" aria-label="Testimonial navigation">
+            {testimonials.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => { setIsAutoPlaying(false); setCurrentIndex(i); }}
+                className={`h-3 w-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-eco-green-300 ${currentIndex === i ? 'bg-eco-green-600' : 'bg-white border border-eco-green-200'}`}
+                aria-current={currentIndex === i ? 'true' : undefined}
+                aria-label={`Перейти до відгуку ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
