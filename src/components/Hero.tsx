@@ -57,7 +57,7 @@ const Hero = () => {
     if (titleRef.current) {
       const spans = titleRef.current.querySelectorAll('.reveal-text');
       spans.forEach((span, i) => {
-        span.style.transitionDelay = `${i * 0.1}s`;
+        (span as HTMLElement).style.transitionDelay = `${i * 0.1}s`;
         setTimeout(() => {
           span.classList.add('revealed');
         }, 100 + i * 100);
@@ -130,9 +130,9 @@ const Hero = () => {
             animate={{ opacity: 1, transition: { duration: 0.8 } }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4"
           >
-            <span className="reveal-text inline-block translate-y-8 opacity-0 transition-all duration-700 ease-out">Nettoyage</span>{' '}
+            <span className="reveal-text inline-block translate-y-8 opacity-0 transition-all duration-700 ease-out">Прибирання</span>{' '}
             <span className="inline-block relative text-emerald-300">
-              Nettoyage Professionnel
+              Професійне прибирання
               <span className="absolute -bottom-1 left-0 w-full h-1 bg-emerald-400/50 rounded-full scale-x-0 origin-left transition-transform delay-1000 duration-700 ease-out reveal-underline"></span>
             </span>
           </motion.h1>
@@ -142,7 +142,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0, transition: { delay: 0.7, duration: 0.8 } }}
             className="text-xl sm:text-2xl text-white font-semibold tracking-wide mt-2"
           >
-            Écologique & Efficace
+            Екологічно та ефективно
           </motion.p>
 
           {/* Description */}
@@ -151,14 +151,14 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0, transition: { delay: 0.9, duration: 0.8 } }}
             className="text-lg text-white text-center mt-6 max-w-2xl px-4"
           >
-            Des solutions de nettoyage innovantes et respectueuses de l'environnement pour tous vos espaces.
+            Інноваційні рішення для прибирання, дружні до довкілля, для будь-яких ваших приміщень.
           </motion.p>
 
           {/* Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mt-10 w-full max-w-4xl px-4">
-            <FeatureCard icon={CheckCircle} text="Solutions 100% Écologiques" index={0} />
-            <FeatureCard icon={Sparkles} text="Résultats Impeccables" index={1} />
-            <FeatureCard icon={CheckCircle} text="Service Sur Mesure" index={2} />
+            <FeatureCard icon={CheckCircle} text="100% екологічні рішення" index={0} />
+            <FeatureCard icon={Sparkles} text="Бездоганні результати" index={1} />
+            <FeatureCard icon={CheckCircle} text="Індивідуальний підхід" index={2} />
           </div>
 
           {/* CTA Buttons */}
@@ -170,18 +170,18 @@ const Hero = () => {
             <Button 
               size="lg"
               className="bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-full px-8 py-6 shadow-lg transition-all hover:shadow-emerald-400/30 hover:translate-y-0.5"
-              aria-label="Demander un devis"
+              aria-label="Замовити кошторис"
             >
-              Demander un devis
+              Замовити кошторис
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
 
             <button 
               onClick={scrollToNextSection}
               className="text-white hover:text-emerald-300 transition-colors flex flex-col items-center mt-6 group"
-              aria-label="Voir les services"
+              aria-label="Переглянути послуги"
             >
-              <span className="text-sm mb-1 tracking-wide">En savoir plus</span>
+              <span className="text-sm mb-1 tracking-wide">Дізнатися більше</span>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 group-hover:bg-white/20 transition-all">
                 <ArrowDown className="h-5 w-5 animate-bounce" />
               </div>

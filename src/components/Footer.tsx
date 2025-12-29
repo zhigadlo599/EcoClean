@@ -180,9 +180,8 @@ const Footer: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold mb-2 text-white">EcoClean <span className="text-eco-green-300">ProMax</span></h2>
               <p className="text-eco-green-200 max-w-md">
-                Solutions professionnelles de nettoyage écologique pour tous vos espaces. 
-                Votre partenaire de confiance pour le nettoyage, la dépollution et la désinfection, 
-                s'engage à créer un environnement plus sain pour vous.
+                Професійні екологічні рішення для прибирання будь-яких приміщень.
+                Ваш надійний партнер у прибиранні, очищенні та дезінфекції, який працює для здоровішого середовища.
               </p>
             </div>
           </div>
@@ -213,7 +212,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           <div className="space-y-6">
             <h3 className="text-xl font-bold mb-6 relative inline-block">
-              <span className="relative z-10">Contact</span>
+              <span className="relative z-10">Контакт</span>
               <span className="absolute bottom-0 left-0 h-1 w-12 bg-eco-green-500"></span>
             </h3>
             
@@ -250,15 +249,15 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <p className="text-sm text-eco-green-100">
-                  8H30 – 19H30 (Lundi – Samedi)
+                  8:30 – 19:30 (Понеділок – Субота)
                 </p>
               </div>
             </div>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6 relative inline-block">
-              <span className="relative z-10">Services</span>
+              <h3 className="text-xl font-bold mb-6 relative inline-block">
+              <span className="relative z-10">Послуги</span>
               <span className="absolute bottom-0 left-0 h-1 w-12 bg-eco-green-500"></span>
             </h3>
             
@@ -280,8 +279,8 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6 relative inline-block">
-              <span className="relative z-10">Liens utiles</span>
+              <h3 className="text-xl font-bold mb-6 relative inline-block">
+              <span className="relative z-10">Корисні посилання</span>
               <span className="absolute bottom-0 left-0 h-1 w-12 bg-eco-green-500"></span>
             </h3>
             
@@ -303,8 +302,8 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6 relative inline-block">
-              <span className="relative z-10">Newsletter</span>
+              <h3 className="text-xl font-bold mb-6 relative inline-block">
+              <span className="relative z-10">Розсилка</span>
               <span className="absolute bottom-0 left-0 h-1 w-12 bg-eco-green-500"></span>
             </h3>
             
@@ -313,17 +312,17 @@ const Footer: React.FC = () => {
                 <div className="w-10 h-10 rounded-full bg-eco-green-500/20 flex items-center justify-center mr-3">
                   <Sparkles className="h-5 w-5 text-eco-green-300" />
                 </div>
-                <h4 className="font-semibold">Restez informés</h4>
+                <h4 className="font-semibold">Будьте в курсі</h4>
               </div>
               
-              <p className="text-eco-green-200 mb-4 text-sm">
-                Inscrivez-vous pour recevoir nos offres spéciales et actualités sur nos services écologiques.
+                <p className="text-eco-green-200 mb-4 text-sm">
+                Підпишіться, щоб отримувати спеціальні пропозиції та новини про наші екологічні послуги.
               </p>
               
               <div className="relative">
                 <Input 
                   type="email" 
-                  placeholder="Votre email" 
+                  placeholder="Ваш email" 
                   className="bg-eco-green-700/30 border-eco-green-700 text-white placeholder:text-eco-green-300 pr-12 focus:ring-eco-green-500 focus:border-eco-green-500"
                 />
                 <Button 
@@ -334,17 +333,17 @@ const Footer: React.FC = () => {
                 </Button>
               </div>
               
-              <div className="mt-4 flex items-center text-xs text-eco-green-300">
+                <div className="mt-4 flex items-center text-xs text-eco-green-300">
                 <Leaf className="h-3 w-3 mr-1" />
-                <span>Pour chaque inscription, un arbre planté</span>
+                <span>За кожну підписку — садимо дерево</span>
               </div>
             </div>
           </div>
         </div>
         
         <div className="border-t border-eco-green-700 pt-8 flex flex-col md:flex-row justify-center items-center">
-          <p className="text-eco-green-300 text-center">
-            &copy; {new Date().getFullYear()} Eco Clean ProMax. Tous droits réservés.
+            <p className="text-eco-green-300 text-center">
+            &copy; {new Date().getFullYear()} Eco Clean ProMax. Всі права захищені.
           </p>
         </div>
       </div>

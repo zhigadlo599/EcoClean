@@ -15,13 +15,13 @@ import {
 } from "@/components/ui/select";
 
 const services = [
-  { id: "parking", name: "Nettoyage Parking", icon: Building2 },
-  { id: "bureaux", name: "Nettoyage Bureaux", icon: Building2 },
-  { id: "cliniques", name: "Nettoyage Cliniques", icon: Building2 },
-  { id: "vitrerie", name: "Nettoyage Vitrerie", icon: Building2 },
-  { id: "sinistres", name: "Nettoyage après Sinistres", icon: Building2 },
-  { id: "chantier", name: "Nettoyage de Chantier", icon: Building2 },
-  { id: "desinfection", name: "Désinfection et Dératisation", icon: Building2 }
+  { id: "parking", name: "Прибирання паркінгів", icon: Building2 },
+  { id: "bureaux", name: "Прибирання офісів", icon: Building2 },
+  { id: "cliniques", name: "Прибирання клінік", icon: Building2 },
+  { id: "vitrerie", name: "Миття вітрин", icon: Building2 },
+  { id: "sinistres", name: "Прибирання після аварій", icon: Building2 },
+  { id: "chantier", name: "Прибирання на будмайданчику", icon: Building2 },
+  { id: "desinfection", name: "Дезінфекція та дератизація", icon: Building2 }
 ];
 
 const Contact = () => {
@@ -261,7 +261,7 @@ const Contact = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header section */}
-        <motion.div 
+          <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -274,7 +274,7 @@ const Contact = () => {
             className="inline-flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-eco-green-100/50 text-eco-green-700 font-medium text-sm mb-4 shadow-sm"
           >
             <Sparkles className="mr-2 h-4 w-4" />
-            <span>Contactez-nous</span>
+            <span>Зв'яжіться з нами</span>
           </motion.div>
           <motion.h2 
             initial={{ y: 20, opacity: 0 }}
@@ -282,7 +282,7 @@ const Contact = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-4 text-gray-900"
           >
-            Prêt à transformer vos espaces ?
+            Готові перетворити ваш простір?
           </motion.h2>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}
@@ -290,7 +290,7 @@ const Contact = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Notre équipe est à votre disposition pour répondre à toutes vos questions et élaborer une solution sur mesure.
+            Наша команда готова відповісти на всі ваші запитання та підготувати індивідуальне рішення.
           </motion.p>
         </motion.div>
         
@@ -314,17 +314,17 @@ const Contact = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-eco-green-500/5 to-eco-green-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <CardContent className="p-8 sm:p-10 relative">
-                <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                   <div className="w-2 h-8 rounded-full bg-gradient-to-b from-eco-green-500 to-eco-green-600" />
-                  Nos coordonnées
+                  Наші контакти
                 </h3>
                 
                 <div className="space-y-6">
                   {[
-                    { icon: Phone, label: "Téléphone", value: "+33 (0) 7 44 53 10 08" },
-                    { icon: Mail, label: "Email", value: "contact@ecocleanpro.fr" },
-                    { icon: MapPin, label: "Adresse", value: "Fleury-Les-Aubrais, 45400" },
-                    { icon: Clock, label: "Horaires", value: "8H30 – 19H30 (Lundi – Samedi)" }
+                    { icon: Phone, label: "Телефон", value: "+33 (0) 7 44 53 10 08" },
+                    { icon: Mail, label: "Електронна пошта", value: "contact@ecocleanpro.fr" },
+                    { icon: MapPin, label: "Адреса", value: "Fleury-Les-Aubrais, 45400" },
+                    { icon: Clock, label: "Графік роботи", value: "8:30 – 19:30 (Пн – Суб)" }
                   ].map((item, index) => (
                     <motion.div 
                       key={index}
@@ -355,9 +355,9 @@ const Contact = () => {
               className="bg-white/80 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 overflow-hidden group relative"
             >
               <CardContent className="p-8 sm:p-10 relative">
-                <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
                   <div className="w-2 h-8 rounded-full bg-gradient-to-b from-eco-green-500 to-eco-green-600" />
-                  Envoyez-nous un message
+                  Надішліть нам повідомлення
                 </h3>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -369,7 +369,7 @@ const Contact = () => {
                       <Input 
                         type="text"
                         name="name"
-                        placeholder="Votre nom complet"
+                        placeholder="Ваше повне ім'я"
                         value={formData.name}
                         onChange={handleChange}
                         className="h-12 bg-gray-50/50 border-gray-200 focus:border-eco-green-500 focus:ring-eco-green-500/20"
@@ -383,7 +383,7 @@ const Contact = () => {
                       <Input 
                         type="email"
                         name="email"
-                        placeholder="Votre email"
+                        placeholder="Ваш email"
                         value={formData.email}
                         onChange={handleChange}
                         className="h-12 bg-gray-50/50 border-gray-200 focus:border-eco-green-500 focus:ring-eco-green-500/20"
@@ -400,7 +400,7 @@ const Contact = () => {
                       <Input 
                         type="tel"
                         name="phone"
-                        placeholder="Votre téléphone"
+                        placeholder="Ваш телефон"
                         value={formData.phone}
                         onChange={handleChange}
                         className="h-12 bg-gray-50/50 border-gray-200 focus:border-eco-green-500 focus:ring-eco-green-500/20"
@@ -427,8 +427,8 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 300 }}
                   >
                     <Select onValueChange={handleServiceChange} value={formData.service}>
-                      <SelectTrigger className="h-12 bg-gray-50/50 border-gray-200 focus:border-eco-green-500 focus:ring-eco-green-500/20">
-                        <SelectValue placeholder="Sélectionnez un service" />
+                        <SelectTrigger className="h-12 bg-gray-50/50 border-gray-200 focus:border-eco-green-500 focus:ring-eco-green-500/20">
+                        <SelectValue placeholder="Оберіть послугу" />
                       </SelectTrigger>
                       <SelectContent>
                         {services.map((service) => (
@@ -449,9 +449,9 @@ const Contact = () => {
                     whileHover={{ scale: 1.02 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
-                    <Textarea 
+                      <Textarea 
                       name="message"
-                      placeholder="Votre message"
+                      placeholder="Ваше повідомлення"
                       value={formData.message}
                       onChange={handleChange}
                       className="min-h-[150px] bg-gray-50/50 border-gray-200 focus:border-eco-green-500 focus:ring-eco-green-500/20"
@@ -482,14 +482,14 @@ const Contact = () => {
                           className="flex items-center gap-2"
                         >
                           <CheckCircle2 className="h-5 w-5" />
-                          Message envoyé !
+                          Повідомлення надіслано!
                         </motion.div>
                       ) : (
                         <motion.div
                           className="flex items-center gap-2"
                           whileHover={{ x: 5 }}
                         >
-                          Envoyer le message
+                          Надіслати повідомлення
                           <Send className="h-5 w-5" />
                         </motion.div>
                       )}

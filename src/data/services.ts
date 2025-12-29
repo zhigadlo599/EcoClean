@@ -19,7 +19,7 @@ export const services: Service[] = [
   {
     id: 'parking',
     title: "Nettoyage Parking",
-    description: "Entretien et lavage des sols de parkings intérieurs et extérieurs, dégraissage et suppression des traces d'huile.",
+    description: "Обслуговування та миття підлог у закритих і відкритих паркінгах, знежирення та видалення масляних плям.",
     icon: Building2,
     features: [
       "Lavage des sols intérieurs",

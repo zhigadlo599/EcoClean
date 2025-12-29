@@ -7,23 +7,23 @@ import * as THREE from 'three';
 
 const testimonials = [
   {
-    name: "Sophie Martin",
-    role: "Directrice d'établissement",
-    content: "Un service exceptionnel ! L'équipe est professionnelle et les résultats sont impeccables. Je recommande vivement.",
+    name: "Софія Мартін",
+    role: "Директор закладу",
+    content: "Винятковий сервіс! Команда професійна, результати — бездоганні. Рекомендую.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&auto=format"
   },
   {
-    name: "Thomas Dubois",
-    role: "Gérant de restaurant",
-    content: "Des solutions écologiques efficaces et un personnel très compétent. Notre restaurant n'a jamais été aussi propre !",
+    name: "Томас Дюбуа",
+    role: "Керівник ресторану",
+    content: "Ефективні екологічні рішення та дуже компетентний персонал. Наш ресторан ніколи не був таким чистим!",
     rating: 5,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&auto=format"
   },
   {
-    name: "Marie Laurent",
-    role: "Propriétaire de clinique",
-    content: "Un partenaire de confiance pour le nettoyage de notre clinique. Hygiène irréprochable et respect des protocoles.",
+    name: "Марі Лоран",
+    role: "Власник клініки",
+    content: "Надійний партнер для прибирання нашої клініки. Ідеальна гігієна та дотримання протоколів.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&auto=format"
   }
@@ -304,7 +304,7 @@ const Testimonials = () => {
             className="inline-flex items-center bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full border border-eco-green-100/50 text-eco-green-700 font-medium text-sm mb-4 shadow-sm"
           >
             <Quote className="mr-2 h-4 w-4" />
-            <span>Témoignages</span>
+            <span>Відгуки</span>
           </motion.div>
           <motion.h2 
             initial={{ y: 20, opacity: 0 }}
@@ -312,7 +312,7 @@ const Testimonials = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900"
           >
-            Ce que nos clients disent
+            Що говорять наші клієнти
           </motion.h2>
         </motion.div>
         

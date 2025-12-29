@@ -139,7 +139,7 @@ const About = () => {
                 transition={{ duration: 0.6 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6"
               >
-                Notre Histoire
+                Наша історія
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -147,7 +147,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto"
               >
-                Découvrez l'histoire d'Ecoclean Pro et notre engagement pour un nettoyage professionnel et écologique
+                Дізнайтеся про історію Ecoclean Pro та наше зобов'язання щодо професійного й екологічного прибирання
               </motion.p>
             </div>
           </div>
@@ -166,11 +166,10 @@ const About = () => {
             className="text-center mb-8 sm:mb-12"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-4 sm:mb-6">
-              Notre Mission
+              Наша місія
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed">
-              Chez Ecoclean Pro, nous nous engageons à fournir des services de nettoyage professionnels 
-              qui respectent l'environnement tout en garantissant des résultats exceptionnels.
+              В Ecoclean Pro ми надаємо професійні послуги прибирання, що поважають довкілля та забезпечують відмінний результат.
             </p>
           </motion.div>
 
@@ -179,23 +178,23 @@ const About = () => {
             {[
               {
                 icon: <Leaf className="h-6 w-6 sm:h-8 sm:w-8" />,
-                title: "Écologique",
-                description: "Produits respectueux de l'environnement"
+                  title: "Екологічно",
+                description: "Засоби, що поважають довкілля"
               },
               {
                 icon: <Users className="h-6 w-6 sm:h-8 sm:w-8" />,
-                title: "Professionnel",
-                description: "Équipe qualifiée et expérimentée"
+                  title: "Професійно",
+                description: "Кваліфікована та досвідчена команда"
               },
               {
                 icon: <Clock className="h-6 w-6 sm:h-8 sm:w-8" />,
-                title: "Efficace",
-                description: "Service rapide et efficace"
+                  title: "Ефективно",
+                description: "Швидкий та результативний сервіс"
               },
               {
                 icon: <Shield className="h-6 w-6 sm:h-8 sm:w-8" />,
-                title: "Fiable",
-                description: "Engagement qualité garanti"
+                  title: "Надійно",
+                description: "Гарантія якості"
               }
             ].map((value, index) => (
               <motion.div
@@ -245,19 +244,19 @@ const About = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <div className="bg-eco-green-50 rounded-xl sm:rounded-2xl p-8 sm:p-12 md:p-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-4 sm:mb-6">
-              Rejoignez-nous dans notre mission
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-4 sm:mb-6">
+              Приєднуйтесь до нашої місії
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-slate-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
-              Découvrez comment nos services de nettoyage professionnels peuvent transformer votre espace
+              Дізнайтеся, як наші професійні послуги прибирання можуть змінити ваш простір
             </p>
             <Link to="/contact">
-              <Button 
+                <Button 
                 size="lg"
                 className="bg-eco-green-600 hover:bg-eco-green-700 text-white rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
                 <span className="flex items-center justify-center gap-2">
-                  Demander un Devis
+                  Замовити кошторис
                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                 </span>
               </Button>

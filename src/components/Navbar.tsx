@@ -69,23 +69,23 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { label: "Accueil", href: "/" },
-    { label: "À propos", href: "/#about" },
+    { label: "Головна", href: "/" },
+    { label: "Про нас", href: "/#about" },
     { 
-      label: "Services", 
+      label: "Послуги", 
       dropdown: [
-        { label: "Nettoyage Parking", href: "/services/parking" },
-        { label: "Nettoyage Bureaux", href: "/services/bureaux" },
-        { label: "Nettoyage Cliniques", href: "/services/cliniques" },
-        { label: "Nettoyage Vitrerie", href: "/services/vitrerie" },
-        { label: "Nettoyage après Sinistres", href: "/services/sinistres" },
-        { label: "Nettoyage de Chantier", href: "/services/chantier" },
-        { label: "Désinfection et Dératisation", href: "/services/desinfection" }
+        { label: "Прибирання паркінгів", href: "/services/parking" },
+        { label: "Прибирання офісів", href: "/services/bureaux" },
+        { label: "Прибирання клінік", href: "/services/cliniques" },
+        { label: "Миття вітрин", href: "/services/vitrerie" },
+        { label: "Прибирання після аварій", href: "/services/sinistres" },
+        { label: "Прибирання на будмайданчику", href: "/services/chantier" },
+        { label: "Дезінфекція та дератизація", href: "/services/desinfection" }
       ]
     },
-    { label: "Blog", href: "/blog" },
-    { label: "Témoignages", href: "/#testimonials" },
-    { label: "Contact", href: "/#contact" }
+    { label: "Блог", href: "/blog" },
+    { label: "Відгуки", href: "/#testimonials" },
+    { label: "Контакт", href: "/#contact" }
   ];
 
   const handleNavigation = (href: string) => {
@@ -148,7 +148,7 @@ const Navbar = () => {
               className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-full transition-all duration-300 text-eco-green-600 hover:bg-eco-green-50/80 text-xs sm:text-sm hover:shadow-md"
             >
               <ArrowLeft className="h-3 w-3 sm:h-4 sm:w-4" />
-              <span className="font-medium">Retour</span>
+              <span className="font-medium">Назад</span>
             </motion.button>
           )}
           <Link to="/" className="flex items-center group">
@@ -275,21 +275,21 @@ const Navbar = () => {
                   onClick={() => handleNavigation('/')}
                   className="block text-sm sm:text-base font-medium text-gray-900 hover:text-eco-green-600 transition-colors duration-200 w-full text-left py-1.5 hover:bg-eco-green-50/50 rounded-lg px-2"
                 >
-                  Accueil
+                  Головна
                 </motion.button>
                 <motion.button
                   whileHover={{ x: 5 }}
                   onClick={() => handleNavigation('/#about')}
                   className="block text-sm sm:text-base font-medium text-gray-900 hover:text-eco-green-600 transition-colors duration-200 w-full text-left py-1.5 hover:bg-eco-green-50/50 rounded-lg px-2"
                 >
-                  À propos
+                  Про нас
                 </motion.button>
                 <motion.button
                   whileHover={{ x: 5 }}
                   onClick={() => handleNavigation('/blog')}
                   className="block text-sm sm:text-base font-medium text-gray-900 hover:text-eco-green-600 transition-colors duration-200 w-full text-left py-1.5 hover:bg-eco-green-50/50 rounded-lg px-2"
                 >
-                  Blog
+                  Блог
                 </motion.button>
               </div>
 
@@ -300,20 +300,20 @@ const Navbar = () => {
                   onClick={() => handleNavigation('/#testimonials')}
                   className="block text-sm sm:text-base font-medium text-gray-900 hover:text-eco-green-600 transition-colors duration-200 w-full text-left py-1.5 hover:bg-eco-green-50/50 rounded-lg px-2"
                 >
-                  Témoignages
+                  Відгуки
                 </motion.button>
                 <motion.button
                   whileHover={{ x: 5 }}
                   onClick={() => handleNavigation('/#contact')}
                   className="block text-sm sm:text-base font-medium text-gray-900 hover:text-eco-green-600 transition-colors duration-200 w-full text-left py-1.5 hover:bg-eco-green-50/50 rounded-lg px-2"
                 >
-                  Contact
+                  Контакт
                 </motion.button>
               </div>
 
               {/* Services avec déroulant */}
               <div className="space-y-2 border-t border-gray-100 pt-4">
-                <div className="font-medium text-gray-900 text-sm sm:text-base px-2">Services</div>
+                <div className="font-medium text-gray-900 text-sm sm:text-base px-2">Послуги</div>
                 <div className="pl-4 space-y-2">
                   {navItems.find(item => item.label === "Services")?.dropdown?.map((subItem, subIndex) => (
                     <Link

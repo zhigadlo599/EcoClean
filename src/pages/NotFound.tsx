@@ -20,10 +20,10 @@ export default function NotFound() {
           transition={{ delay: 0.2, duration: 0.5 }}
         >
           <h2 className="text-3xl font-semibold text-eco-green-800 mb-4">
-            Page non trouvée
+            Сторінку не знайдено
           </h2>
           <p className="text-eco-green-600 mb-8 max-w-md mx-auto">
-            Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+            Вибачте, сторінка, яку ви шукаєте, не існує або була переміщена.
           </p>
         </motion.div>
 
@@ -33,8 +33,8 @@ export default function NotFound() {
           transition={{ delay: 0.4, duration: 0.5 }}
         >
           <Link to="/">
-            <Button variant="default" size="lg">
-              Retour à l'accueil
+              <Button variant="default" size="lg">
+              Повернутися на головну
             </Button>
           </Link>
         </motion.div>

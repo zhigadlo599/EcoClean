@@ -55,10 +55,10 @@ const ArticlesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-            Nos Articles & Actualités
+            Наші статті та новини
           </h2>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Découvrez nos derniers articles sur le nettoyage écologique, les techniques professionnelles et les innovations du secteur.
+            Огляньте наші останні статті про екологічне прибирання, професійні методики та інновації у сфері.
           </p>
         </motion.div>
 
@@ -86,7 +86,7 @@ const ArticlesSection = () => {
           className="text-center mt-12"
         >
           <button className="inline-flex items-center px-6 py-3 bg-eco-green-500 hover:bg-eco-green-400 text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-eco-green-500/30">
-            Voir tous les articles
+            Переглянути всі статті
             <svg
               className="ml-2 h-5 w-5"
               fill="none"

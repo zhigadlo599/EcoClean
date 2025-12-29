@@ -11,117 +11,108 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-// Données des articles (à remplacer par une API plus tard)
+// Дані статей (можна замінити на API пізніше)
 const blogPosts = [
   {
-    title: "Comment garder votre maison propre et saine",
-    author: "Patrick",
-    date: "11 Mai 2025",
-    category: "Nettoyage à domicile",
+    title: "Як зберегти будинок чистим та здоровим",
+    author: "Патрик",
+    date: "11 Травня 2025",
+    category: "Прибирання вдома",
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1920",
     slug: "nettoyage-a-domicile",
-    excerpt: "Une maison propre est essentielle pour une vie saine. Découvrez quelques astuces simples pour garder votre intérieur éclatant sans y passer des heures."
+    excerpt: "Чистий дім — запорука здорового життя. Прості поради, щоб підтримувати чистоту без зайвого клопоту."
   },
   {
-    title: "Pourquoi l'hygiène domestique influence notre bien-être",
-    author: "Patrick",
-    date: "31 Mars 2022",
-    category: "Nettoyage à domicile",
+    title: "Чому гігієна дому впливає на наше благополуччя",
+    author: "Патрик",
+    date: "31 Березня 2022",
+    category: "Прибирання вдома",
     image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1920",
     slug: "hygiene-domestique-bien-etre",
-    excerpt: "L'hygiène de notre environnement direct a un impact significatif sur notre santé physique et mentale. Découvrez pourquoi et comment l'améliorer."
+    excerpt: "Гігієна оточення впливає на фізичне та психічне здоров'я. Дізнайтеся чому і як це покращити."
   },
   {
-    title: "Un intérieur qui sent toujours bon : mission possible !",
-    author: "Patrick",
-    date: "31 Mars 2022",
-    category: "Nettoyage à domicile",
+    title: "Як зробити дім завжди приємно пахнучим",
+    author: "Патрик",
+    date: "31 Березня 2022",
+    category: "Прибирання вдома",
     image: "https://images.unsplash.com/photo-1583845112239-97ef1341b271?auto=format&fit=crop&q=80&w=1920",
     slug: "interieur-qui-sent-bon",
-    excerpt: "Les mauvaises odeurs peuvent gâcher l'ambiance d'une pièce. Voici nos conseils pour maintenir un intérieur frais et agréable."
+    excerpt: "Поради для підтримки свіжого та приємного запаху в оселі без шкідливих хімікатів."
   },
   {
-    title: "Les erreurs à éviter lors du ménage",
-    author: "Patrick",
-    date: "30 Mars 2022",
-    category: "Nettoyage à domicile",
+    title: "Поширені помилки при прибиранні і як їх уникнути",
+    author: "Патрик",
+    date: "30 Березня 2022",
+    category: "Прибирання вдома",
     image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1920",
     slug: "erreurs-menage",
-    excerpt: "Certaines habitudes de nettoyage peuvent être inefficaces voire contre-productives. Apprenez à les identifier et à les corriger."
+    excerpt: "Дізнайтеся про помилки, які можуть ускладнити прибирання, і як їх виправити."
   },
   {
-    title: "Les secrets d'un nettoyage de bureau efficace",
-    author: "Patrick",
-    date: "15 Avril 2025",
-    category: "Nettoyage professionnel",
+    title: "Секрети ефективного прибирання офісу",
+    author: "Патрик",
+    date: "15 Квітня 2025",
+    category: "Професійне прибирання",
     image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1920",
     slug: "nettoyage-bureau-efficace",
-    excerpt: "Découvrez les techniques professionnelles pour maintenir un espace de travail impeccable et sain."
+    excerpt: "Професійні методики для підтримки робочого простору чистим і безпечним."
   },
   {
-    title: "Nettoyage des espaces commerciaux : guide complet",
-    author: "Patrick",
-    date: "10 Avril 2025",
-    category: "Nettoyage professionnel",
+    title: "Прибирання комерційних приміщень: повний посібник",
+    author: "Патрик",
+    date: "10 Квітня 2025",
+    category: "Професійне прибирання",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1920",
     slug: "nettoyage-espaces-commerciaux",
-    excerpt: "Un guide détaillé pour le nettoyage et l'entretien des espaces commerciaux de toutes tailles."
+    excerpt: "Детальний довідник з прибирання та обслуговування комерційних приміщень будь-якого розміру."
   },
   {
-    title: "10 astuces pour un nettoyage rapide et efficace",
-    author: "Patrick",
-    date: "5 Avril 2025",
-    category: "Conseils et astuces",
+    title: "10 порад для швидкого та ефективного прибирання",
+    author: "Патрик",
+    date: "5 Квітня 2025",
+    category: "Поради",
     image: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&q=80&w=1920",
     slug: "astuces-nettoyage-rapide",
-    excerpt: "Des astuces simples et efficaces pour gagner du temps dans vos tâches de nettoyage quotidiennes."
+    excerpt: "Прості і дієві поради, щоб заощадити час під час щоденних робіт з прибирання."
   },
   {
-    title: "Comment organiser son temps de ménage",
-    author: "Patrick",
-    date: "1 Avril 2025",
-    category: "Conseils et astuces",
+    title: "Як організувати свій час для прибирання",
+    author: "Патрик",
+    date: "1 Квітня 2025",
+    category: "Поради",
     image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1920",
     slug: "organiser-temps-menage",
-    excerpt: "Apprenez à planifier et optimiser votre temps de ménage pour un entretien régulier et efficace."
+    excerpt: "Як планувати та оптимізувати час для регулярного й ефективного прибирання."
   },
   {
-    title: "Les meilleurs produits de nettoyage écologiques",
-    author: "Patrick",
-    date: "25 Mars 2025",
-    category: "Produits écologiques",
+    title: "Найкращі екологічні засоби для прибирання",
+    author: "Патрик",
+    date: "25 Березня 2025",
+    category: "Екологічні продукти",
     image: "https://images.unsplash.com/photo-1583845112239-97ef1341b271?auto=format&fit=crop&q=80&w=1920",
     slug: "produits-nettoyage-ecologiques",
-    excerpt: "Découvrez notre sélection des meilleurs produits de nettoyage respectueux de l'environnement."
+    excerpt: "Наша добірка найкращих екологічних засобів для безпечного прибирання."
   },
   {
-    title: "Comment fabriquer ses produits de nettoyage naturels",
-    author: "Patrick",
-    date: "20 Mars 2025",
-    category: "Produits écologiques",
+    title: "Як виготовити натуральні засоби для прибирання",
+    author: "Патрик",
+    date: "20 Березня 2025",
+    category: "Екологічні продукти",
     image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&q=80&w=1920",
     slug: "fabriquer-produits-naturels",
-    excerpt: "Guide pratique pour créer vos propres produits de nettoyage écologiques à la maison."
-  },
-  {
-    title: "L'impact environnemental des produits de nettoyage",
-    author: "Patrick",
-    date: "15 Mars 2025",
-    category: "Produits écologiques",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=1920",
-    slug: "impact-environnemental-nettoyage",
-    excerpt: "Analyse de l'impact des produits de nettoyage sur l'environnement et solutions alternatives."
+    excerpt: "Практичний посібник зі створення власних екологічних засобів для прибирання вдома."
   }
 ];
 
 const Blog = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Toutes les catégories");
+  const [selectedCategory, setSelectedCategory] = useState("Всі категорії");
   const [searchQuery, setSearchQuery] = useState("");
   const [isChrome, setIsChrome] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Détection de Chrome
+    // Виявлення Chrome
     const isChromeBrowser = /Chrome/.test(navigator.userAgent) && !/Edge/.test(navigator.userAgent);
     setIsChrome(isChromeBrowser);
     setMounted(true);
@@ -129,7 +120,7 @@ const Blog = () => {
 
   const categories = useMemo(() => {
     const uniqueCategories = new Set(blogPosts.map(post => post.category));
-    return ["Toutes les catégories", ...Array.from(uniqueCategories)];
+    return ["Всі категорії", ...Array.from(uniqueCategories)];
   }, []);
 
   const filteredPosts = useMemo(() => {
@@ -186,7 +177,7 @@ const Blog = () => {
       <div className="min-h-screen bg-gradient-to-b from-white to-eco-green-50/30 pt-24 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-eco-green-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Chargement...</p>
+          <p className="text-gray-600">Завантаження...</p>
         </div>
       </div>
     );
@@ -200,13 +191,13 @@ const Blog = () => {
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center bg-eco-green-100 px-4 py-2 rounded-full text-eco-green-700 font-medium text-sm mb-4">
               <Leaf className="mr-2 h-4 w-4" />
-              <span>Notre Blog</span>
+              <span>Наш блог</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Articles & Actualités
+              Статті та новини
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Découvrez nos derniers articles sur le nettoyage écologique, les techniques professionnelles et les innovations du secteur.
+              Останні статті про екологічне прибирання, професійні методики та інновації галузі.
             </p>
           </div>
 
@@ -217,7 +208,7 @@ const Blog = () => {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
                 <Input
                   type="search"
-                  placeholder="Rechercher un article..."
+                  placeholder="Пошук статті..."
                   className="pl-10 bg-white/80 backdrop-blur-sm border-eco-green-100 focus:border-eco-green-300"
                   value={searchQuery}
                   onChange={handleSearchChange}
@@ -228,7 +219,7 @@ const Blog = () => {
                 onValueChange={handleCategoryChange}
               >
                 <SelectTrigger className="w-full sm:w-[200px] bg-white/80 backdrop-blur-sm border-eco-green-100 focus:border-eco-green-300">
-                  <SelectValue placeholder="Catégorie" />
+                  <SelectValue placeholder="Категорія" />
                 </SelectTrigger>
                 <SelectContent>
                   {categories.map((category) => (
@@ -288,7 +279,7 @@ const Blog = () => {
                         variant="ghost"
                         className="text-eco-green-600 hover:text-eco-green-700 hover:bg-eco-green-50/50"
                       >
-                        Lire la suite
+                        Читати далі
                       </Button>
                     </div>
                   </Link>
@@ -298,14 +289,14 @@ const Blog = () => {
           ) : (
             <div className="text-center py-12 bg-white rounded-xl shadow-sm">
               <p className="text-gray-600 text-lg mb-4">
-                Aucun article ne correspond à votre recherche.
+                Немає статей, що відповідають вашому запиту.
               </p>
               <Button
                 variant="ghost"
                 onClick={handleResetFilters}
                 className="text-eco-green-600 hover:text-eco-green-700"
               >
-                Réinitialiser les filtres
+                Скинути фільтри
               </Button>
             </div>
           )}

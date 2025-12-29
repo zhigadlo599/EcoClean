@@ -62,7 +62,7 @@ const Article = ({ title, description, image, date, readTime, category, slug }: 
           variant="ghost"
           className="group/button text-eco-green-400 hover:text-eco-green-300 hover:bg-eco-green-400/10 px-0"
         >
-          Lire la suite
+          Читати далі
           <ArrowRight className="ml-2 h-4 w-4 transform group-hover/button:translate-x-1 transition-transform" />
         </Button>
       </div>

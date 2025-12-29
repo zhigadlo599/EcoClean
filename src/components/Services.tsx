@@ -119,14 +119,14 @@ const Services: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <motion.div
+            <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={isVisible ? { scale: 1, opacity: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.5 }}
             className="inline-flex items-center bg-eco-green-100 px-4 py-1.5 rounded-full text-eco-green-700 font-medium text-sm mb-4"
           >
             <Leaf className="mr-2 h-4 w-4" />
-            <span>Nos Prestations</span>
+            <span>Наші послуги</span>
           </motion.div>
 
           <motion.h2
@@ -135,7 +135,7 @@ const Services: React.FC = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-3xl md:text-4xl font-bold mb-4"
           >
-            Des Solutions Adaptées à Vos Besoins
+            Рішення, що відповідають вашим потребам
           </motion.h2>
 
           <motion.div
@@ -145,13 +145,13 @@ const Services: React.FC = () => {
             className="h-1 bg-eco-green-500 mx-auto mb-6"
           />
 
-          <motion.p
+            <motion.p
             initial={{ y: 20, opacity: 0 }}
             animate={isVisible ? { y: 0, opacity: 1 } : {}}
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-muted-foreground text-center"
           >
-            Découvrez notre gamme complète de services professionnels, conçus pour répondre à tous vos besoins en matière de nettoyage et d'entretien.
+            Дізнайтеся про наш повний спектр професійних послуг, створених для задоволення всіх ваших потреб у прибиранні та обслуговуванні.
           </motion.p>
         </motion.div>
 
@@ -217,9 +217,9 @@ const Services: React.FC = () => {
                 {/* Liste des fonctionnalités */}
                 <CardContent>
                   <div className="space-y-4">
-                    <div className="flex items-center justify-center gap-2 text-eco-green-600 mb-4">
+                      <div className="flex items-center justify-center gap-2 text-eco-green-600 mb-4">
                       <Info className="h-5 w-5" />
-                      <span className="font-medium">Points Clés</span>
+                      <span className="font-medium">Ключові моменти</span>
                     </div>
                     <ul className="space-y-3">
                       {service.features.map((feature, featureIndex) => (
@@ -263,7 +263,7 @@ const Services: React.FC = () => {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Link to={`/services/${service.id}`}>
-                      <Button className="bg-eco-green-500 hover:bg-eco-green-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full">
+                          <Button className="bg-eco-green-500 hover:bg-eco-green-600 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full">
                         <span className="text-sm font-medium">
                           {service.cta}
                         </span>

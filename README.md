@@ -17,25 +17,51 @@ EcoClean Pro is a modern web application that provides professional cleaning ser
 
 1. Clone the repository:
 ```bash
-git clone [URL_DU_REPO]
+git clone <REPO_URL>
 ```
 
 2. Install the dependencies:
 ```bash
-ppm install
+npm install
 ```
 
 3. Start the development server:
 ```bash
-ppm run dev
+npm run dev
 ```
 
 ## Available Scripts
 
-- `ppm run dev`: Starts the development server
-- `ppm run build`: Compiles the project for production
-- `ppm run preview`: Previews the production build
-- `ppm run lint`: Runs the linter
+- `npm run dev`: Starts the development server
+- `npm run build`: Compiles the project for production
+- `npm run preview`: Previews the production build
+- `npm run lint`: Runs the linter
+
+## Deploy to Vercel
+
+This project is a Vite app and can be deployed to Vercel easily.
+
+1. Option A — connect GitHub repo in Vercel dashboard:
+
+  - Push your local repository to GitHub (see commands below).
+  - In Vercel, Import Project → select your GitHub repo → Accept defaults (Build: `npm run build`, Output: `dist`).
+
+2. Option B — use Vercel CLI:
+
+```bash
+npx vercel login
+npx vercel --prod
+```
+
+Commands to push this repo to your GitHub (replace `<YOUR_GIT_URL>`):
+
+```bash
+git remote add origin <YOUR_GIT_URL>
+git branch -M main
+git add .
+git commit -m "Prepare for Vercel deploy"
+git push -u origin main
+```
 
 ## Project Structure
 

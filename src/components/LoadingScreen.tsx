@@ -73,7 +73,7 @@ const LoadingScreen = () => {
             ease: "easeInOut"
           }}
         >
-          Chargement...
+          Завантаження...
         </motion.div>
 
         {/* Particules animées */}
